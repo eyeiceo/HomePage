@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="一个沉浸式玻璃风个人主页，适合部署到 GitHub Pages。"
+    />
+    <title>个人主页</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="identity-panel glass-panel" aria-label="个人信息">
+        <div class="identity-top">
+          <div class="avatar" id="avatarInitials" aria-hidden="true">Hi</div>
+          <div>
+            <p class="eyebrow" id="profileKicker">Welcome aboard</p>
+            <h1 id="profileName">你的名字</h1>
+            <p class="subtitle" id="profileRole">Developer / Designer</p>
+          </div>
+        </div>
+
+        <p class="bio" id="profileBio">
+          在互联网的一角，收集灵感、代码和正在成形的想法。
+        </p>
+
+        <div class="quote-card">
+          <svg class="quote-mark" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M8.8 6.4c-2.9 1.5-4.4 3.8-4.4 6.9v4.3h6.4v-6.2H7.2c.1-1.4 1-2.5 2.9-3.5L8.8 6.4Zm10 0c-2.9 1.5-4.4 3.8-4.4 6.9v4.3h6.4v-6.2h-3.6c.1-1.4 1-2.5 2.9-3.5l-1.3-1.5Z"
+            />
+          </svg>
+          <p id="profileQuote">
+            保持好奇，保持动手，把每天的小进展攒成自己的星图。
+          </p>
+        </div>
+
+        <nav class="social-row" id="socialLinks" aria-label="社交链接"></nav>
+      </section>
+
+      <section class="dashboard" aria-label="主页入口">
+        <div class="top-widgets">
+          <article class="glass-panel saying-card">
+            <p id="dailyLine">愿你今天也能写下清亮的一行。</p>
+            <span id="dailySource">- 今日短句</span>
+          </article>
+
+          <article class="glass-panel clock-card">
+            <time id="dateText">0000 年 00 月 00 日</time>
+            <strong id="timeText">00:00:00</strong>
+            <span id="statusText">正在校准此刻</span>
+          </article>
+        </div>
+
+        <div class="section-title">
+          <span class="title-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M10 13a5 5 0 0 0 7.1 0l2-2a5 5 0 0 0-7.1-7.1l-1.1 1.1 1.8 1.8 1.1-1.1a2.5 2.5 0 0 1 3.5 3.5l-2 2a2.5 2.5 0 0 1-3.5 0L10 13Zm4-2a5 5 0 0 0-7.1 0l-2 2a5 5 0 1 0 7.1 7.1l1.1-1.1-1.8-1.8-1.1 1.1a2.5 2.5 0 1 1-3.5-3.5l2-2a2.5 2.5 0 0 1 3.5 0L14 11Z"
+              />
+            </svg>
+          </span>
+          <h2>站点入口</h2>
+        </div>
+
+        <div class="link-grid" id="siteLinks"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
