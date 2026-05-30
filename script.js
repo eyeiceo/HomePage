@@ -31,7 +31,7 @@ const siteConfig = {
     {
       title: "网盘",
       desc: "资料和公开文件",
-      url: "https://iceo666.eu.org/",
+      url: "https://ice666.cc.cd/",
       icon: "cloud",
     },
     {
